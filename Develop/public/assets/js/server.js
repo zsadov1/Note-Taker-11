@@ -9,9 +9,7 @@ const PORT = 3000;
 
 const app = express();
 
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
+const PORT = Process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -53,14 +51,45 @@ newNote.id = topID +1
 let tempDatabase = database; 
 tempDatabase.push(newNote);
 
-// 5) Rewrite to db.json 
 fs.writeFile("./Develop/db/db.json", JSON.stringify(tempDatabase), err => {
   if(err) {
     console.log(err);
   } else {
     console.log("Note added to db.json")
-    console.log("database");
+    console.log(database);
     res.json(newNote);
   }
 });
+});
+
+// 4e Delete /api/notes/:id--> using ID allow the client to delete notes.
+
+app.delete("/apir/notes/:id", function(req, req) {
+  const pickedID = req.params.id;
+
+  let tempDeBe = database;
+
+  for(let i =, i < tempDeBe.length; i++){
+    if(pickedID === tempDeBe[i].id.toString()){
+      tempDeBe.spice(i,1);
+    }
+  }
+
+  // 5) Rewrite to db.json
+
+  fs.writeFile(".Develop/db/db.json" , JSON.stringify(tempDeBe), err => {
+    if(err) {
+      res.sendStatus(500);
+    } else {
+      console.log(`${pickedID} deleted from the database`);
+      console.log(database);
+      res.sendStatus(200);
+    }
+  });
+});
+
+// 6) Establish a listener
+
+app.listen(PORT, function(){
+  console.log("listening on http://localhost:" + PORT);
 });
