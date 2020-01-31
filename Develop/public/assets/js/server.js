@@ -22,3 +22,15 @@ const database = require("./Develop/public/db/db.json")
 
 // 4) Establish routes 
 
+//  Get `*`
+
+app.use(express.static("Develop/public"));
+
+// Get `/notes`
+
+app.get("notes", function(req, res) {
+  return  res.sendFile(path.join(__dirname, "notes.html"));
+});
+
+// Get `/api/notes --> read.db.json-->return all saved notes 
+
