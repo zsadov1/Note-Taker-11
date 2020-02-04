@@ -17,13 +17,13 @@ let notesData = [];
 // Set up body parsing, static, and route middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "./Develop/public")));
+app.use(express.static(path.join(__dirname, "Develop/public")));
 
 // routes
 
 // api call response for all the notes, and sends the results to the browser as an array of object
 
-app.get("/assets/notes.html", function(err, res) {
+app.get("/api/notes", function(err, res) {
   try {
     // reads the notes from json file
     notesData = fs.readFileSync("Develop/db/db.json", "utf8");
@@ -41,7 +41,7 @@ app.get("/assets/notes.html", function(err, res) {
 });
 
 // writes the new note to the json file
-app.post("/develop/notes.html", function(req, res) {
+app.post("/api/notes", function(req, res) {
   try {
     // reads the json file
     notesData = fs.readFileSync("./Develop/db/db.json", "utf8");
