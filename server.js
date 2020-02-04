@@ -8,7 +8,7 @@ const fs = require("fs");
 // creating an "express" server
 const app = express();
 // Sets an Initial port for listeners
-const PORT = process.env.PORT || 9001;
+const PORT = process.env.PORT || 3000;
 
 //  Initialize notesData
 
@@ -41,7 +41,7 @@ app.get("/api/notes", function(err, res) {
 });
 
 // writes the new note to the json file
-app.post("/api/notes", function(req, res) {
+app.post("./api/notes", function(req, res) {
   try {
     // reads the json file
     notesData = fs.readFileSync("./Develop/db/db.json", "utf8");
