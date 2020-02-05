@@ -8,18 +8,18 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Express app - parsing data
-app.use(express.urlencoded({extended:treu}));
+app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 // Data
 
-const noteData = require("Develop\db\db.json/");
+const noteData = require("./Develop/db/db.json");
 
 // Routes
 
 // GET `*` 
 
-app.use(express.static(Develop/public));
+app.use(express.static("Develop/public"));
 
 // GET /notes ---> notes.html
 
@@ -40,7 +40,7 @@ app.post("/api/notes", function(req,res) {
   let maxID = 0;
   for(const note of noteData) {
     let currentID = note.id;
-    id(currentID > maxID) {
+    if (currentID > maxID) {
       maxID = currentID;
     }
   }
