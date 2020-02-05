@@ -1,33 +1,33 @@
-// need express to interact with the front end
+//Dependences
 const express = require("express");
-// need path for filename paths
 const path = require("path");
-// need fs to read and write to files
 const fs = require("fs");
 
 // creating an "express" server
 const app = express();
-// Sets an Initial port for listeners
 const PORT = process.env.PORT || 3000;
 
-//  Initialize notesData
-
-let notesData = [];
-
-// Set up body parsing, static, and route middleware
+// Express app - parsing data
+app.use(express.urlencoded({extended:treu}));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "Develop/public")));
 
-// routes
+// Data
 
-// api call response for all the notes, and sends the results to the browser as an array of object
+const noteData = require("Develop\db\db.json/");
 
-app.get("/api/notes", function(err, res) {
+// Routes
+
+// GET `*` 
+
+app.use(express.static(Develop/public));
+
+// GET /notes ---> notes.html
+
+app.get("/notes", function(err, res) {
   try {
     // reads the notes from json file
-    notesData = fs.readFileSync("Develop/db/db.json", "utf8");
-    console.log("hello!");
+    notesData = fs.readFileSync("./Develop/db/db.json", "utf8");
+    console.log("Read File Working!");
     // parse it so notesData is an array of objects
     notesData = JSON.parse(notesData);
 
