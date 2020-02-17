@@ -8,7 +8,7 @@ This app is great for making a todo list, todon't list, and everything in betwee
 
 ## Demo
 
-![Farmers Market Finder Demo](img/take.gif)
+![GIF not working if you see this.  Just give the mouse the ole "click, click" on the url up there ^.  Make a note to send me a note that I need to fix my README.md. ](Develop\public\assets\img\take.gif)
 
 
 ## Built With 
