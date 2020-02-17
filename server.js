@@ -64,7 +64,7 @@ app.delete("/api/notes/:id", function(req, res) {
   // Receive a query parameter containing the id of a note to delete
   const chosenID = req.params.id;
   // Read all notes from the 'db.json' file and remove the note with the given 'id' property
-  let tempDB = database;
+  let tempDB = noteData;
   for (let i = 0; i < tempDB.length; i++) {
     if (chosenID === tempDB[i].id.toString()) {
       tempDB.splice(i, 1);
@@ -76,7 +76,7 @@ app.delete("/api/notes/:id", function(req, res) {
       res.sendStatus(500);
     } else {
       console.log(`Deleted id # ${chosenID} from the database.`);
-      console.log(database);
+      console.log(noteData);
       res.sendStatus(200);
     }
   });
