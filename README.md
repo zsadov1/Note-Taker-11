@@ -8,7 +8,7 @@ This app is great for making a todo list, todon't list, and everything in betwee
 
 ## Demo
 
-![Note Taker gif](Develop\public\assets\img\take.gif)
+![Farmers Market Finder Demo](img/take.gif)
 
 
 ## Built With 
