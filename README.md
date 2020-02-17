@@ -8,47 +8,13 @@ This app is great for making a todo list, todon't list, and everything in betwee
 
 ## Demo
 
-
-
-
-
-
+![Note Taker gif](Develop\public\assets\img\Takergif.gif)
 
 
 ## Built With 
--Javascript
--Node.js
--Express 
-
-
-
-
-
-
-
-
-
-
-
-
-
-##Usage
-Users are asked to give their current location, after which they will enter their desired destination. Carfree will show them a polyline for walking directions and display travel time to the left of the map. Our service also answers the age old question "Is it gone rain?"
-
-Gen 2 Options
-At Carfree we would like to add a number of different features like biking and transit functionality, as will as ride share API intergration.
-
-Credits
-skyline.jpg by unknown downloaded at https://images.pexels.com/photos/237325
-
-License
-Copyright (c)2020 Zachary Sadovszky
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.ote-Taker
+- Javascript
+- Node.js
+- Express 
 
 ## User Story
 
@@ -61,3 +27,12 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ## Business Context
 
 For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+
+License
+Copyright (c)2020 Zachary Sadovszky
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.ote-Taker
