@@ -1,28 +1,54 @@
- Note-Taker-11
+
+## Note-Taker
+
+Deployed at https://note-taker-11.herokuapp.com/
 
 ## Description
+This app is great for making a todo list, todon't list, and everything in between.  Using an Express back end one can write, delete and save notes.
 
-Create an application that can be used to write, save, and delete notes. This application will uses express backend and save and retrieve note data from a JSON file.
+## Demo
 
-- The application frontend was created, I built the backend and connected the two.
 
-- The following HTML routes are used:
 
-  - GET `/notes` returns the `notes.html` file.
 
-* GET `*` returns the `index.html` file. 
 
-- The notes are stored in a `db.json` file on the backend. The `fs` module is used to read and write to this file.
 
-* The following API royes were created:
 
-  - GET `/api/notes` reads the `db.json` file and return all saved notes as JSON. 
 
-  - POST `/api/notes` receives a new note to save on the request.body, add it to the `db.json` file, and then return the new note to the client when the save icon is clicked. Here is the screen shot before saving
+## Built With 
+-Javascript
+-Node.js
+-Express 
 
-And this is the screen shot after it's been saved, with the title circled:
 
-- DELETE `/api/notes/:id` receives a query paramter containing the id of a note to delete when the trash can next to the corresponding title is clicked. The note is deleted from the list and from the `db.json` file.
+
+
+
+
+
+
+
+
+
+
+
+##Usage
+Users are asked to give their current location, after which they will enter their desired destination. Carfree will show them a polyline for walking directions and display travel time to the left of the map. Our service also answers the age old question "Is it gone rain?"
+
+Gen 2 Options
+At Carfree we would like to add a number of different features like biking and transit functionality, as will as ride share API intergration.
+
+Credits
+skyline.jpg by unknown downloaded at https://images.pexels.com/photos/237325
+
+License
+Copyright (c)2020 Zachary Sadovszky
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.ote-Taker
 
 ## User Story
 
