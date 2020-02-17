@@ -8,7 +8,7 @@ This app is great for making a todo list, todon't list, and everything in betwee
 
 ## Demo
 
-![Note Taker gif](Develop\public\assets\img\Takergif.gif)
+![Note Taker gif](Takergif.gif)
 
 
 ## Built With 
